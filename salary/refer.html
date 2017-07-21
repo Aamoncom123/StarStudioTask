@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+ <html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>查询页面</title>
+  <link rel="stylesheet" href="refer.css">
+</head>
+<body>
+  <section class="container">
+    <div class="refer">
+      <h1>工资查询</h1>
+        <p id="ti">年份</p>
+        <select id="year" name="年份">
+          <option value="2010">2010</option>
+          <option value="2011">2011</option>
+          <option value="2012">2012</option>
+          <option value="2013">2013</option>
+        </select>
+        <p>月份</p>
+        <select id="month"name="月份">
+          <option value="01">一月</option>
+          <option value="02">二月</option>
+          <option value="03">三月</option>
+          <option value="04">四月</option>
+          <option value="05">五月</option>
+          <option value="06">六月</option>
+          <option value="07">七月</option>
+          <option value="08">八月</option>
+          <option value="09">九月</option>
+          <option value="10">十月</option>
+          <option value="11">十一月</option>
+          <option value="12">十二月</option>
+        </select>
+        <input id="input" name="commit" value="确认" onclick="loadXMLDoc()">
+        <table id="table">
+          <tr>
+            <th>工资年号</th>
+            <td id="td0"></td>
+          </tr>
+          <tr>
+            <th>工号</th>
+            <td id="td1"></td>
+          </tr>
+          <tr>
+            <th>姓名</th>
+            <td id="td2"></td>
+          </tr>
+          <th>离退休费</th>
+          <td id="td3"></td>
+        </tr>
+        <tr>
+          <th>养老金</th>
+          <td id="td4"></td>
+        </tr>
+        <tr>
+          <th>生活补贴</th>
+          <td id="td5"></td>
+        </tr>
+        <tr>
+          <th>交通费</th>
+          <td id="td6"></td>
+        </tr>
+        <tr>
+          <th>护理费</th>
+          <td id="td7"></td>
+        </tr>
+        <tr>
+          <th>其余津补贴</th>
+          <td id="td8"></td>
+        </tr>
+            <th>补发</th>
+            <td id="td9"></td>
+          </tr>
+          <tr>
+            <th>水费</th>
+            <td id="td10"></td>
+          </tr>
+          <tr>
+            <th>电费</th>
+            <td id="td11"></td>
+          </tr>
+          <tr>
+            <th>气费</th>
+            <td id="td12"></td>
+          </tr>
+            <th>房租</th>
+            <td id="td13"></td>
+          </tr>
+          <tr>
+            <th>物管费</th>
+            <td id="td14"></td>
+          </tr>
+          <tr>
+            <th>医护会会费</th>
+            <td id="td15"></td>
+          </tr>
+          <tr>
+            <th>临时扣费</th>
+            <td id="td16"></td>
+          </tr>
+            <th>暂存</th>
+            <td id="td17"></td>
+          </tr>
+          <tr>
+            <th>应发合计</th>
+            <td id="td18"></td>
+          </tr>
+          <tr>
+            <th>扣款合计</th>
+            <td id="td19"></td>
+          </tr>
+          <tr>
+            <th>实发工资</th>
+            <td id="td20"></td>
+          </tr>
+        </table>
+      <a class="change" href="changeKey.html">修改密码</a>
+      <a href="quit.html">退出</a>
+    </div>
+  </section>
+<script type="text/javascript" src="refer.js"></script>
+</body>
+</html>
