@@ -1,0 +1,35 @@
+html{
+	background-size:100% 100%;
+	height:100%;
+	width:100%;
+  background-color: #0ca3d2;
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+}
+
+body{
+	position: absolute;
+	left: 25%;
+	height:60%;
+	overflow:hidden;
+	width:50%;
+	margin-top: 5%;
+  font-size:50px;
+	background: rgba(255,255,255,0.6);
+  box-shadow: 1px 1px 8px #707070;
+}
+h1{
+  margin:15% 10% 15% 10%;
+  text-align: center;
+	font-size: 115%;
+}
+p{
+  text-align: center;
+}
+.button{
+  margin-top: 15%;
+  height: 25%;
+  width: 35%;
+  text-align: center;
+  font-size: 110%;
+}
