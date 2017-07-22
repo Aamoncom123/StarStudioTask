@@ -5,33 +5,37 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>查询页面</title>
   <link rel="stylesheet" href="refer.css">
+  <link rel="stylesheet" type="text/css" href="jquery.monthpicker.css">
+  <style type="text/css">
+  #monthly{padding:4px;border:1px solid #d9d9d9}
+  </style>
+  <script type="text/javascript" src="jquery.js"></script>
+  <script src="jquery.monthpicker.js"></script>
+  <script type="text/javascript">
+ $(document).ready(function() {
+ });
+</script>
+  <script type="text/javascript">
+  $(function(){
+  	$('#monthpicker').monthpicker({
+          years: [2017, 2018, 2019, 2020, 2021],
+          topOffset: 6,
+          onMonthSelect: function(m, y) {
+            console.log('Month: ' + m + ', year: ' + y);
+          }
+      });
+  	$('#monthly').monthpicker({
+  		years: [2017, 2018, 2019, 2020, 2021],
+          topOffset: 6
+  	})
+  });
+  </script>
 </head>
 <body>
   <section class="container">
     <div class="refer">
       <h1>工资查询</h1>
-        <p id="ti">年份</p>
-        <select id="year" name="年份">
-          <option value="2016">2016</option>
-          <option value="2017">2017</option>
-          <option value="2018">2018</option>
-          <option value="2019">2019</option>
-        </select>
-        <p>月份</p>
-        <select id="month"name="月份">
-          <option value="01">一月</option>
-          <option value="02">二月</option>
-          <option value="03">三月</option>
-          <option value="04">四月</option>
-          <option value="05">五月</option>
-          <option value="06">六月</option>
-          <option value="07">七月</option>
-          <option value="08">八月</option>
-          <option value="09">九月</option>
-          <option value="10">十月</option>
-          <option value="11">十一月</option>
-          <option value="12">十二月</option>
-        </select>
+      <p>查询年月：</p><input type="text" class="input" id="monthly">
         <input id="input" type="button" name="commit" value="确认" onclick="loadXMLDoc()">
         <table id="table"cellpadding="0">
           <tr>

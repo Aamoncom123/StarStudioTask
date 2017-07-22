@@ -43,22 +43,17 @@ body {
 }
 .refer p{
   display: inline-block;
-  font-size: 43px;
+  font-size: 35px;
   margin-left: 5%;
 }
-#ti{
-  margin:5% 0 5% 0;
-}
-#year, #month{
-height: 55px;
-width:230px;
-font-size: 45px;
-}
 input{
-  margin-left:4%;
-  height:60px;
-  width: 120px;
+  height:10%;
+  width: 25%;
   font-size: 40px;
+}
+#input{
+  margin-left: 8%;
+  width: 16%;
 }
 a{
   font-size: 40px;

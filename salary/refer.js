@@ -3,11 +3,11 @@ function loadXMLDoc()
 var xmlhttp=new XMLHttpRequest();
 var arr={};
 var data={};
-var year=document.getElementById('year');
-var month=document.getElementById('month');
-var str=year.value+month.value;
-arr={str};
+var str=document.getElementById('monthly');
+console.log(str);
+arr={"date":str.value};
 data= JSON.stringify(arr);
+console.log(data);
 var url="http://www.jiangtaoxh.xyz/retirement/salary/show";
 xmlhttp.onreadystatechange=function()
 {
