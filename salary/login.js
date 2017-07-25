@@ -6,7 +6,7 @@ function loadXMLDoc()
 	var aa=document.getElementsByName('account');
 	var bb=document.getElementsByName('password');
   arr={"account":aa[0].value,
-  			"password":bb[0].value};
+			 "password":bb[0].value};
   data= JSON.stringify(arr);
 	console.log(data);
   var url="http://www.jiangtaoxh.xyz/retirement/salary/bound";

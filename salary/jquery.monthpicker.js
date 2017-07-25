@@ -49,9 +49,9 @@
           month = months[monthIndex],
           year = this._yearsSelect.val();
 		  if(this._el.attr('type')=="text"){
-			  this._el.attr("value",year+'-'+month);
+			  this._el.attr("value",year+month);
 		  }else{
-			  this._el.html(year+'-'+month);
+			  this._el.html(year+month);
 		  }
 
         if (options.onMonthSelect) {

@@ -4,7 +4,6 @@ var xmlhttp=new XMLHttpRequest();
 var arr={};
 var data={};
 var str=document.getElementById('monthly');
-console.log(str);
 arr={"date":str.value};
 data= JSON.stringify(arr);
 console.log(data);
@@ -14,6 +13,7 @@ xmlhttp.onreadystatechange=function()
   if ( xmlhttp.readyState==4 && xmlhttp.status==200)
     {
       var reply=JSON.parse(xmlhttp.responseText);
+      console.log(reply);
       var gzny,gh,xm,ltxf,ylj,shbt,jtf,hlf,qyjbt,bf,sf,df,qf,fz,wgf,yhhhf,lskf,zc,yfhj,kkhj,sfgz;
       var list=["gzny","gh","xm","ltxf","ylj","shbt","jtf","hlf","qyjbt","bf","sf","df","qf","fz","wgf","yhhhf","lskf","zc","yfhj","kkhj","sfgz"];
       list[0]=reply.data["gzny"];
